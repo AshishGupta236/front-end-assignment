@@ -1,0 +1,53 @@
+<div class="grid-container " *ngFor="let result of results">
+    <mat-card>
+        <div class="cardSize">
+      <div>
+        <h1>{{result.name}}</h1>
+      </div>
+      <div>
+        {{result.domain}}
+      </div>
+      <div class="main">
+        <div class="container1">
+            <img src="/assets/burner.png" alt="image">
+        </div>
+        <div class="card1 text-end">
+          <img src="/assets/rotation.png" alt="image">
+          
+        </div>
+        
+      </div>
+      <div>
+            <mat-progress-bar mode="determinate" value="100"></mat-progress-bar>
+      </div>
+      <div class="checkbox">
+  
+        <input type="radio" name="sort1" value="yes" id="sort1" checked>
+        <label for="sort1">
+      
+              <span>spend</span>
+          </label>
+   
+      </div>
+      <div class="checkbox">
+  
+        <input type="radio" name="sort1" value="yes" id="sort1" checked>
+        <label for="sort1">
+      
+              <span>Available to spend</span>
+          </label>
+   
+      </div>
+    </div>
+    </mat-card>
+
+</div>
+  <!-- {{result.name}}
+{{result.domain}}
+{{result.spend}}
+{{result.Availabletospend}}
+{{result.Limit}}
+{{result.Sub}} -->
+
+<!-- *ngFor="let result of results" -->
+  

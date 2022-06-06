@@ -1,0 +1,25 @@
+<div class="main">
+  <div class="container1">
+    <h1>Virtual card</h1>
+  </div>
+  <div class="card1 text-end">
+    <img src="/assets/card1.png" alt="image">
+  </div>
+</div>
+<mat-tab-group>
+  <mat-tab label="Your">
+    <ng-template matTabContent>
+      <app-your-component></app-your-component>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="All">
+    <ng-template matTabContent>
+      <app-all-component></app-all-component>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Blocked">
+    <ng-template matTabContent>
+      <app-blocked-component></app-blocked-component>
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>
